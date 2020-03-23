@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pothole Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--1. Create a 3-page website (Homepage, Add new pothole, Map page).
+        2. Create a navbar with three buttons.
+        The "Home" button should be in upper left, 
+        and "Add new" and "Map" should be on the upper right.-->
+
+    <div class="main-container"> 
+    <!-- Top navigation bar starts here-->
+        <div class = "nav">
+       
+            <div class="left-button">
+                <a href="./index.html">HOME</a>     
+            </div>
+
+            <div class ="right-button">
+                <a href="./addNew/newPothole.html">ADD NEW</a>
+                <a href="./mapPage/mapPage.html">MAP</a> 
+            </div>
+
+        </div>
+     
+     
+    <!-- Top navigation bar ends here-->
+
+    <!-- Question: is there a way to target the three nav links together as one div rather than 
+    separate them out? I separate out the diff so they aren't lininig in the same line.I tried to
+    play around w/margin but I don't think it is lining up straight for the links.-->
+
+    <!-- Main section starts here:
+        The tile and the content should use only 60% of the width.-->
+    
+        <div class = "main-section">
+        <h1> My Pothole Website </h1>
+            <h2> "I designed this website to document some of my favorite potholes around Boston. 
+                Below you can see my three favorite potholes. To see a map of all the potholes, 
+                click "Map" in the navigation bar. To add your own favorite potholes, click "Add new."</h2>
+        </div>
+
+    <!-- Main section ends here-->
+
+    <!-- 3 columns w/imgs starts here:
+    The home page should also show the three pothole images, centered on the page in 3 columns,
+    with each title centered over each picture. All three images should display in the same size.-->
+                            
+        <div class = "columns"> 
+                <div>
+                    <h3>String of Pearl</h3>
+                    <img src = "./images/pothole1.jpg" alt="pic1">
+                </div>
+            
+                <div>
+                <h3>Fractal Pothole</h3>
+                <img src = "./images/pothole2.jpg" alt="pic2">
+                </div>
+            
+
+                <div>
+                <h3>Salt and Sand</h3>
+                <img src = "./images/pothole3.jpg" alt="pic3">
+                </div>           
+        </div>
+
+    <!--3 columns w/imgs ends here-->
+
+    <!-- Question-- Was trying to write the code as <div class="potholes">String of Pearl but didn't close the
+        div tag until after the image tag. But I couldn't target the word String of Pearl to move. If I don't
+        use the h tag, how would I code it?-->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
